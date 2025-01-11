@@ -33,6 +33,7 @@ monitor_battery() {
         elif [ "$battery_percentage" -le "$LOW_BATTERY" ]; then
             send_notification "$battery_percentage" "normal" "/usr/share/icons/Papirus/24x24/panel/battery-low.svg"
         fi
+        exit 0
     done
 }
 
