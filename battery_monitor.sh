@@ -20,7 +20,8 @@ send_notification() {
 
 # Obtain battery percentage
 get_battery_percentage() {
-    /usr/bin/cat /sys/class/power_supply/BAT0/capacity
+    # CHECK THE BATTERY with ls /sys/class/power_supply/ | grep BAT
+    /usr/bin/cat /sys/class/power_supply/BAT0/capacity # CHANGE BAT0 BY BAT 1, DEPENDS OF YOUR KERNEL
 }
 
 # Main
