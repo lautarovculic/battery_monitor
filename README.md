@@ -7,6 +7,7 @@ sudo pacman -S cronie
 chmod +x battery_monitor.sh
 ```
 Remember change your display with `echo $DISPLAY` and modify in the script.
+Also please check the BUS with `echo $DBUS_SESSION_BUS_ADDRESS` and `id -u`
 
 Then, with `crontab -e` add:
 ```bash
