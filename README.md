@@ -20,3 +20,10 @@ Then, with `crontab -e` add:
 ```bash
 */1 * * * * /home/user/battery_monitor.sh
 ```
+Remember *enable* the cronie service:
+```bash
+systemctl status cronie
+```
+```bash
+systemctl enable --now cronie
+```
